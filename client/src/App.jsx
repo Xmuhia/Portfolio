@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { Hero, Skills, Projects, Contacts } from './compontents';
+import { Hero, Skills, Projects, Contacts } from './components';
 
 
 const App = () => {
