@@ -2,17 +2,344 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@900&display=swap');
 
 
-/* ---- reset ---- */
+/* ---- Custom CSS ---- */
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
+  min-height: 1500px;
+  scroll-behavior: smooth;
 }
-canvas {
-  display: block;
-  vertical-align: bottom;
+
+.hero-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* ---- tsparticles container ---- */
+
+.parallax img {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    z-index: 10;
+  }
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -10;
+}
+
+.hero-container::before {
+    content: '';
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10;
+ }
+
+ .hero-container::after {
+  content: '';
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: -10;
+}
 
 
+#bio {
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  color: #fff;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+}
+
+#bio p {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  z-index: 15;
+}
+
+ #text {
+position: relative;
+color: #fff;
+font-size: 10em;
+z-index: 1;
+}
+
+#venus {
+  bottom: -5%;
+  right: -20%;
+  width: 70%;
+  height: 70%;
+  z-index: 10;
+}
+
+#saturn {
+  top: 7%;
+  left: 1%;
+  width: 20%;
+  height: 10%;
+  z-index: -4;
+}
+
+#jupiter {
+  top: 14%;
+  left: 7%;
+  width: 30%;
+  height: 25%;
+  z-index: -4;
+}
+
+#mars {
+  top: 30%;
+  left: 25%;
+  width: 30%;
+  height: 30%;
+  z-index: -2;
+}
+
+#moonman {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 80%;
+}
+
+
+/*======= Skills ===== */
+.skills .glass {
+position: relative;
+  width: 200px;
+  height: 240px;
+  background: linear-gradient(☐#fff2, transparent);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 25px 25px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0-20px;
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.skills .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(18, 30, 79, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.skills {
+  padding: 100px;
+  z-index: 20;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  background: #0a2a43;
+  top: 50%; /* Adjust as needed */
+  transform: translateX(100px);
+}
+
+.skills .glass .material {
+  font-size: 10em;
+  color: #fff;
+}
+
+.skills svg {
+  fill: white;
+}
+
+#mongo {
+  fill: white;
+  height: 50%;
+}
+
+.skills .glass {
+  transition: transform 0.5s ease-in-out;
+}
+
+.skills:hover .glass {
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.title-skills h1 {
+  background: linear-gradient(☐#fff2, transparent);
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.title-skills {
+  background: #0a2a43;
+  padding: 10px; /* Adjust as needed */
+  z-index: 100;
+  transform: translateY(-25px);
+}
+
+.skills {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #0a2a43;
+  top: 87%; /* Adjust as needed */
+  transform: translateY(-20%);
+}
+
+#projects-title {
+  background: #0a2a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Adjust as needed */
+  z-index: 10000;
+  transform: translateY(300%);
+}
+
+
+#projects-title h1 {
+  background: linear-gradient(☐#fff2, transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1000;
+}
+
+.skills-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Adjust as needed */
+}
+
+.projects-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px; /* Adjust as needed */
+}
+
+
+/* ========== PROJECTS ==========*/
+.project-cards {
+  position: absolute;
+  flex-wrap: wrap;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #0a2a43;
+  top: 80%; /* Adjust as needed */
+  transform: translateY(20%);
+  transform-style: preserve-3d; 
+}
+
+
+.project-cards .box {
+  position: relative; 
+  width: 300px; 
+  height: 400px;
+  margin: 40px;
+  background: #0d3859;; 
+  border-radius: 20px; 
+  transform-style: preserve-3d; 
+  z-index: 10;
+  cursor: pointer;
+  perspective: none;
+  transform: translateZ(50px);
+}
+
+.project-cards .box .name{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  text-align: center;
+  color:#fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  opacity: 1;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+
+.project-cards .box .check-demo {
+  position: absolute;
+  bottom: 30px;
+  left: 30%;
+  transform-style: preserve-3d;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  opacity: 1;
+  z-index: 1000000;
+  cursor: pointer;
+  border: 2px solid #fff; /* Add this line to set the white border */
+}
+
+
+
+
+.project-cards .box .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 110000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px) 
+}
