@@ -276,9 +276,9 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 110vh;
   background: #0a2a43;
-  top: 80%; /* Adjust as needed */
+  top: 50%; /* Adjust as needed */
   transform: translateY(20%);
   transform-style: preserve-3d; 
 }
@@ -350,12 +350,15 @@ position: relative;
 
 .contacts-box {
   position: absolute;
+  z-index: 11;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom,#ff4f8b, #dff1ff);
+  top: 258%;
+  align-items: center;
+  background: #0a2a43;
 }
 
 .contacts-box .color{
@@ -365,7 +368,7 @@ position: relative;
 
   
 .contacts-box .color:nth-child(1){
-  background: #ff359b;
+  background: #5377da;
   width: 600px;
   height: 600px;
   top: -350px;
@@ -373,7 +376,7 @@ position: relative;
 
 
   .contacts-box .color:nth-child(2) {
-  background:  #FF3596;
+  background:  #4942ce;
   width: 600px;
   height: 600px;
   top: -350px;
@@ -388,4 +391,54 @@ position: relative;
   z-index: 1;
   backdrop-filter: blur(5px);
   border-top: 1px solid rgba(255, 255, 255, 0 - 5);
+}
+
+ul{
+  position: relative;
+  display: flex;
+}
+
+
+.icons {
+  position: relative;
+  z-index: 100000;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color:#fff;
+  font-size: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba (255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.icons:hover{
+  transform: translateY(-20px);
+}
+
+ul li .icons::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+}
+
+ul li .icons:hover::before {
+transform: skewX(45deg) translateX(150px);
+}
+
+ul li {
+position: relative;
+list-style: none;
+margin: 10px;
 }
