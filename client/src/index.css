@@ -212,16 +212,16 @@ position: relative;
 }
 
 .skills {
-  position: absolute;
+  position: relative;
   z-index: 20;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 50vh;
   background: #0a2a43;
-  top: 87%; /* Adjust as needed */
+  top: 0%; /* Adjust as needed */
   transform: translateY(-20%);
 }
 
@@ -262,24 +262,24 @@ position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px; /* Adjust as needed */
+  padding: 10px; /* Adjust as needed */
 }
 
 
 /* ========== PROJECTS ==========*/
 .project-cards {
-  position: absolute;
+  position: relative;
   flex-wrap: wrap;
   z-index: 20;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 110vh;
+  min-height: 100vh;
   background: #0a2a43;
-  top: 50%; /* Adjust as needed */
-  transform: translateY(20%);
+  top: 0%; /* Adjust as needed */
+  transform: translateY(0%);
   transform-style: preserve-3d; 
 }
 
@@ -349,14 +349,15 @@ position: relative;
 /* ========== CONTACTS ==========*/
 
 .contacts-box {
-  position: absolute;
-  z-index: 11;
+  position: relative;
+  z-index: 10;
   width: 100%;
-  height: 100vh;
+  height: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  top: 258%;
+  top: 0px;
   align-items: center;
   background: #0a2a43;
 }
@@ -366,32 +367,7 @@ position: relative;
   filter: blur(150px);
 }
 
-  
-.contacts-box .color:nth-child(1){
-  background: #5377da;
-  width: 600px;
-  height: 600px;
-  top: -350px;
-  }
-
-
-  .contacts-box .color:nth-child(2) {
-  background:  #4942ce;
-  width: 600px;
-  height: 600px;
-  top: -350px;
-  }
-
-  .contacts-box::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-  z-index: 1;
-  backdrop-filter: blur(5px);
-  border-top: 1px solid rgba(255, 255, 255, 0 - 5);
-}
+ 
 
 ul{
   position: relative;
@@ -434,11 +410,23 @@ ul li .icons::before{
 }
 
 ul li .icons:hover::before {
-transform: skewX(45deg) translateX(150px);
+  transform: skewX(45deg) translateX(150px);
 }
 
 ul li {
-position: relative;
-list-style: none;
-margin: 10px;
+  position: relative;
+  list-style: none;
+  margin: 10px;
+}
+
+/* ========== MEDIA QUERIES ========= */
+
+/* Tablet styles (768px and above) */
+@media only screen and (max-width: 768px){
+  
+}
+
+/* Mobile styles (below 768px) */
+@media only screen and (max-width: 480px) {
+
 }
