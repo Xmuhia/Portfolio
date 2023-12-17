@@ -232,7 +232,8 @@ position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Adjust as needed */
+  padding: 0px; /* Adjust as needed */
+  margin-bottom: -3em;
 }
 
 
@@ -245,12 +246,13 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
   padding: 1em; /* Adjust as needed */
   z-index: 10000;
-  transform: translateY(100%);
+  transform: translateY(170%); /* Center the content vertically */
   width: 100vw;
+  margin-bottom: 0em;
 }
-
 
 #projects-title h1 {
   background: linear-gradient(☐#fff2, transparent);
@@ -267,12 +269,16 @@ position: relative;
 .projects-container {
   position: relative;
   width: 100vw;
+  height: 200%;
   display: flex;
   top: 0%;
   flex-direction: column;
   align-items: center;
-  padding: 0px; /* Adjust as needed */
-  transform: translateY(-23%);
+  padding: 2em; /* Adjust as needed */
+  padding-bottom:   10em; /* Adjust as needed */
+  transform: translateY(-3%);
+  margin-bottom: -4em;
+  margin-top: -8em;
 }
 
 
@@ -282,15 +288,16 @@ position: relative;
   flex-wrap: wrap;
   z-index: 10; /* Adjust z-index value */
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: #0a2a43;
-  transform: translateY(5%);
+  transform: translateY(13%);
   transform-style: preserve-3d;
-  margin: 1em;
+  margin: 0.5em;
+  bottom: -10;
 }
 
 .project-cards .box {
@@ -417,16 +424,34 @@ ul li {
 
 /* Tablet styles (768px and above) */
 @media only screen and (max-width: 768px){
-  .contacts-box {
-    top: 20px; /* Adjust as needed */
+  .skills {
+    margin-bottom: -20%;
   }
 
-  .skills {
-    margin-bottom: -10%;
+  .project-cards {
+    height: 150vh;
+    margin: 3.5em;
   }
 }
 
 /* Mobile styles (below 768px) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 760px) {
+  .project-container{
+    height: 550vh;
+    margin: 3.5em;
+    margin-top: -7em;
+  }
 
+  .project-cards {
+    height: 350vh;
+    margin: 3.5em;
+    margin-top: -20em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    overflow-y: scroll; /* Enable vertical scrollbar */
+    overflow-x: scroll; /* Enable horizontal scrollbar */
+  }
 }
