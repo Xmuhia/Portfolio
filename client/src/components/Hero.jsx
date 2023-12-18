@@ -42,7 +42,8 @@ const Hero = () => {
         <img src={Saturn} id="saturn" style={saturnStyle} />
       </main>
       <section id='bio'>
-        <span>WEB DEVELOPER & DESIGNER</span>
+        <span>WEB DEVELOPER & <br />
+        DESIGNER</span>
         <p>
           Hi, I'm Brendan, I am a Fullstack Software Engineer
           <br />
@@ -52,7 +53,7 @@ const Hero = () => {
           <br />
           I love Minimal & Brutalist Design.
           <br />
-          I love Artificial Intelligence & Astronomy & Pizza
+          I love Artificial Intelligence, Astronomy & Pizza
         </p>
       </section>
     </div>

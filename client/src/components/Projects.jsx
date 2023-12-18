@@ -29,9 +29,12 @@ const ProjectCard = ({ title, image }) => {
 
     x.set(xPct);
     y.set(yPct);
+
+    event.stopPropagation();
   };
 
   return (
+    <>
     <motion.div
       className="box"
       onMouseMove={handleMouseMove}
@@ -46,6 +49,8 @@ const ProjectCard = ({ title, image }) => {
       <div className="circle"></div>
       <img src={image} className="product" alt={title} />
     </motion.div>
+    
+    </>
   );
 };
 
