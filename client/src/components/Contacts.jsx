@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 const Contacts = () => {
   return (
-    <section className='contacts-box'>
+    <section className='contacts-box' id='contacts-box'>
       <div class="color"></div>
       <div class="color"></div>
       <div class="color"></div>
@@ -20,4 +20,4 @@ const Contacts = () => {
   )
 }
 
-export default Contacts
+export default Contacts;
