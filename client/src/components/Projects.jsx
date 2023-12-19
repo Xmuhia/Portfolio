@@ -35,21 +35,36 @@ const ProjectCard = ({ title, image }) => {
 
   return (
     <>
-    <motion.div
-      className="box"
-      onMouseMove={handleMouseMove}
-      style={{
-        rotateX,
-        rotateY,
-        transformStyle: "preserve-3d",
-      }}
-    >
-      <h2 className="name">{title}</h2>
-      <a href="#" className="check-demo">Check Demo</a>
-      <div className="circle"></div>
-      <img src={image} className="product" alt={title} />
-    </motion.div>
-    
+      <motion.div
+        className="box-parent"
+        style={{
+          perspective: 1000, 
+        }}
+      >
+        <motion.div
+          className="box"
+          onMouseMove={handleMouseMove}
+          style={{
+            rotateX,
+            rotateY,
+            transformStyle: "preserve-3d",
+            cursor: "pointer",
+          }}
+        >
+          <h2 className="name">{title}</h2>
+          <a href="#" className="view-demo">View Demo</a>
+          
+          {/* Button wrapped in a div */}
+          <div className="button-wrapper">
+            <a href="#" className="view-code">View Code</a>
+          </div>
+
+          <div className="description" style={{ display: "none" }}>
+            {/* Description content goes here */}
+          </div>
+          <img src={image} className="product" alt={title} />
+        </motion.div>
+      </motion.div>
     </>
   );
 };

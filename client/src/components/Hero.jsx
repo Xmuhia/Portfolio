@@ -41,10 +41,10 @@ const Hero = () => {
         <img src={Venus} id="venus" style={venusStyle} />
         <img src={Saturn} id="saturn" style={saturnStyle} />
       </main>
-      <section id='bio'>
+      <section id='bio' className='bio' >
         <span>WEB DEVELOPER & <br />
         DESIGNER</span>
-        <p>
+        <p className='intro'>
           Hi, I'm Brendan, I am a Fullstack Software Engineer
           <br />
           specializing in Front-end development.
