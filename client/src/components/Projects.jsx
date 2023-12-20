@@ -36,9 +36,8 @@ const ProjectCard = ({ title, image }) => {
   let imageStyle = {};
 
   if (image === RecipeImage) {
-    imageStyle = {
-      transform: "translateY(-3em)",
-      
+    imageStyle = { 
+      top: "15em",
       height: "60%"
     };
   }
@@ -64,7 +63,6 @@ const ProjectCard = ({ title, image }) => {
           <h2 className="name">{title}</h2>
           <a href="#" className="view-demo">View Demo</a>
           
-          {/* Button wrapped in a div */}
           <div className="button-wrapper">
             <a href="#" className="view-code">View Code</a>
           </div>
