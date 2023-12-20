@@ -33,12 +33,22 @@ const ProjectCard = ({ title, image }) => {
     event.stopPropagation();
   };
 
+  let imageStyle = {};
+
+  if (image === RecipeImage) {
+    imageStyle = {
+      transform: "translateY(-3em)",
+      
+      height: "60%"
+    };
+  }
+
   return (
     <>
       <motion.div
         className="box-parent"
         style={{
-          perspective: 1000, 
+          perspective: 1000,
         }}
       >
         <motion.div
@@ -58,11 +68,7 @@ const ProjectCard = ({ title, image }) => {
           <div className="button-wrapper">
             <a href="#" className="view-code">View Code</a>
           </div>
-
-          <div className="description" style={{ display: "none" }}>
-            {/* Description content goes here */}
-          </div>
-          <img src={image} className="product" alt={title} />
+          <img src={image} className="product" alt={title} style={imageStyle} />
         </motion.div>
       </motion.div>
     </>
