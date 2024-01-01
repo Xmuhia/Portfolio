@@ -11,7 +11,7 @@ import DictionaryImage from '../assets/Dictionary.png';
 import CRUDImage from '../assets/CRUD.png';
 import RecipeImage from '../assets/Recipe.png';
 
-const ProjectCard = ({ title, image }) => {
+const ProjectCard = ({ title, image, githubLink, demoLink }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -55,9 +55,9 @@ const ProjectCard = ({ title, image }) => {
         }}
       >
         <h2 className="name">{title}</h2>
-        <a href="#" className="view-demo">View Demo</a>
+        <a href={demoLink} target="_blank" rel="noopener noreferrer" className="view-demo">View Demo</a>
         <div className="button-wrapper">
-          <a href="#" className="view-code">View Code</a>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="view-code">View Code</a>
         </div>
         <img src={image} className="product" alt={title} style={imageStyle} />
       </motion.div>
@@ -67,10 +67,30 @@ const ProjectCard = ({ title, image }) => {
 
 const Projects = () => {
   const projectData = [
-    { title: "3D A.I Shirt Store", image: Shirt },
-    { title: "Dictionary Project", image: DictionaryImage },
-    { title: "CRUD Project", image: CRUDImage },
-    { title: "Recipe Project", image: RecipeImage }
+    { 
+      title: "3D A.I Shirt Store", 
+      image: Shirt, 
+      githubLink: "https://github.com/Xmuhia/Artificial-intelligence-3D-Shirtshop", 
+      demoLink: "https://aishirtshop.vercel.app/"
+    },
+    { 
+      title: "Dictionary Project", 
+      image: DictionaryImage, 
+      githubLink: "https://github.com/Xmuhia/Dictionary-App", 
+      demoLink: "https://dictappx.netlify.app/"
+    },
+    { 
+      title: "CRUD Project", 
+      image: CRUDImage, 
+      githubLink: "https://github.com/Xmuhia/Patients-CRUD-Data-App", 
+      demoLink: "https://patientsx.netlify.app/"
+    },
+    { 
+      title: "Recipe Project", 
+      image: RecipeImage, 
+      githubLink: "https://github.com/Xmuhia/Recipe-App", 
+      demoLink: "https://recipeappx.netlify.app/"
+    }
   ];
 
   return (
@@ -81,7 +101,12 @@ const Projects = () => {
       <div className='project-cards'>
         {projectData.map((project, index) => (
           <div key={index}>
-            <ProjectCard title={project.title} image={project.image} />
+            <ProjectCard 
+              title={project.title} 
+              image={project.image} 
+              githubLink={project.githubLink} 
+              demoLink={project.demoLink} 
+            />
           </div>
         ))}
       </div>
