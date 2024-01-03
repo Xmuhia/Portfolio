@@ -26,6 +26,7 @@ const Hero = () => {
   const saturnStyle = { transform: `translateX(${scrollPosition * -0.7}px)` };
   const marsStyle = { transform: `translateX(${scrollPosition * -0.3}px)` };
   const jupiterStyle = { transform: `translateX(${scrollPosition * -0.7}px)` };
+  const bioStyle = { transform: `translateY(${scrollPosition * -0.2}px)` };
 
   return (
     <div className="hero-container">
@@ -41,10 +42,10 @@ const Hero = () => {
         <img src={Venus} id="venus" style={venusStyle} />
         <img src={Saturn} id="saturn" style={saturnStyle} />
       </main>
-      <section id='bio' className='bio' >
+      <section id='bio' className='bio' style={bioStyle}>
         <span>WEB DEVELOPER & <br />
         DESIGNER</span>
-        <p className='intro'>
+        <p className='intro' >
           Hi, I'm Brendan, I am a Fullstack Software Engineer
           <br />
           specializing in Front-end development.
