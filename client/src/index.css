@@ -333,8 +333,8 @@ position: relative;
 
 .project-cards .box {
   position: relative; 
-  width: 20em; 
-  height: 30em;
+  width: 23em; 
+  height: 33em;
   margin: 3em;
   background: #0d3859;; 
   border-radius: 20px; 
@@ -481,6 +481,10 @@ ul li {
   .contacts-box {
     transform: translateY(10em);
     
+  }
+
+  .project-cards {
+    transform: translateY(18%);
   }
 
   span {
