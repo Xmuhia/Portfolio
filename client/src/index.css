@@ -204,6 +204,12 @@ position: relative;
   color: #fff;
 }
 
+.skills .glass .icon-style {
+  font-size: 5em;
+  color: #fff;
+}
+
+
 .skills svg {
   fill: white;
 }
