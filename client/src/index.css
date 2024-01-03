@@ -490,7 +490,7 @@ ul li {
   }
 
   .project-cards {
-    transform: translateY(17%);
+    transform: translateY(15%);
   }
 
   span {
@@ -499,7 +499,7 @@ ul li {
   }
   
   .intro {
-    font-size: 0.5em;
+    font-size: 0.2em;
   }
   
 
