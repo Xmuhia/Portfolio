@@ -15,8 +15,8 @@
   font-family: "Migra";
   src: url("assets/migrabold.otf") format("opentype"),
        url("assets/migraitalic.otf") format("opentype");
-  font-style: normal;
-  font-weight: 400;
+  font-style: bold;
+  font-weight: 800;
 }
 
 @font-face {
@@ -100,12 +100,9 @@ span {
 }
 
 .bio p {
-  font-family: "Migra",sans-serif;
-  font-weight: 600;
+  font-family: "Migra";
   font-size: 2.5em;
-  font-style: italic;
   z-index: 15;
-  font-style: italic;
   color: #ffffff;
 }
 
@@ -356,7 +353,6 @@ position: relative;
   width: 100%;
   transform-style: preserve-3d;
   font-family: "Migra";
-  font-weight: 400;
   transition: 0.5s;
   opacity: 1;
   z-index: 10;
