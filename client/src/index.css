@@ -100,6 +100,7 @@ span {
 
 .bio p {
   font-family: "Migra",sans-serif;
+  font-weight: 400;
   font-size: 2.5em;
   font-style: italic;
   z-index: 15;
@@ -354,6 +355,7 @@ position: relative;
   width: 100%;
   transform-style: preserve-3d;
   font-family: "Migra";
+  font-weight: 400;
   transition: 0.5s;
   opacity: 1;
   z-index: 10;
