@@ -539,8 +539,8 @@ ul li {
     }
     
    #project-cards {
-      transform: translateY(13%);
-      height: 260vh;
+      transform: translateY(15%);
+      height: 250vh;
     } 
 
     #projects-title  {
