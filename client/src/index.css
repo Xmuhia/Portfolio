@@ -505,7 +505,7 @@ ul li {
 
   .skills .glass {
     position: relative;
-    width: 8em;
+    width: 6em;
     height: 8em;
   }
 }
@@ -513,7 +513,7 @@ ul li {
 @media only screen and (max-width: 720px) {
   .skills svg {
     fill: white;
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
   .skills .glass .material {
     font-size: 6em;
@@ -527,11 +527,15 @@ ul li {
     }
 
     #contacts-box {
-      transform: translateY(25em);
+      transform: translateY(28em);
     }
 
     .title-skills h1 {
       transform: translateX(39%);
+    }
+
+    .skills {
+      transform: translateY(-3em);
     }
     
    .project-cards {
