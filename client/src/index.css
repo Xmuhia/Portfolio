@@ -527,7 +527,7 @@ ul li {
     }
 
     #contacts-box {
-      transform: translateY(32em);
+      transform: translateY(35em);
     }
 
     .title-skills h1 {
@@ -543,7 +543,7 @@ ul li {
     } 
 
     .project-container {
-      height: 270%;
+      height: 300%;
     }
 }
 
