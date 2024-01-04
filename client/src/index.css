@@ -527,7 +527,7 @@ ul li {
     }
 
     #contacts-box {
-      transform: translateY(36em);
+      transform: translateY(30em);
     }
 
     .title-skills h1 {
@@ -544,7 +544,7 @@ ul li {
     } 
 
     #projects-title  {
-      transform: translateY(10em) !important;
+      transform: translateY(30em) !important;
     }
 
 
