@@ -540,12 +540,9 @@ ul li {
     
    .project-cards {
       transform: translateY(13%);
+      height: 230vh;
     } 
 
-    .project-container {
-      height: 330%;
-    }
-}
 
 @media only screen and (max-width: 760px) {
   .project-container{
