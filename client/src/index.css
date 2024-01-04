@@ -520,6 +520,7 @@ ul li {
 
   }
 
+
   .skills .glass {
       position: relative;
       width: 12em;
@@ -527,7 +528,7 @@ ul li {
     }
 
     #contacts-box {
-      transform: translateY(30em);
+      transform: translateY(27em);
     }
 
     .title-skills h1 {
@@ -556,7 +557,7 @@ ul li {
   }
 
   #bio p {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
 
   .skills{
