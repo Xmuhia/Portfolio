@@ -14,7 +14,7 @@ const Skills = () => {
         <h1>SKILLS</h1>
       </div>
       <div className="skills" id='skills'>
-      <div className="glass" data-text="HTML" style={{ '--r': 25 }}>
+      <div className="glass" data-text="HTML" style={{ '--r': 30 }}>
         <FaHtml5 className='icon-style'/>
       </div>
       <div className="glass" data-text="CSS" style={{ '--r': 25 }}>

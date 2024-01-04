@@ -535,12 +535,16 @@ ul li {
     }
 
     .skills {
-      transform: translateY(-7em);
+      transform: translateY(-9em);
     }
     
    .project-cards {
       transform: translateY(14%);
     } 
+
+    .project-container {
+      height: 230%;
+    }
 }
 
 @media only screen and (max-width: 760px) {
