@@ -98,7 +98,7 @@ const Projects = () => {
       <div className='title' id='projects-title'>
         <h1>PROJECTS</h1>
       </div>
-      <div className='project-cards'>
+      <div className='project-cards' id='project-cards'>
         {projectData.map((project, index) => (
           <div key={index}>
             <ProjectCard 
